@@ -1,11 +1,26 @@
 ﻿@model List<Category>
-</br>
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-dark">
+                Category List
+            </h2>
+        </div>
+        <div class="col-6 text-end pb-3">
+            
+                <a asp-controller="Category" asp-action="Create" class="btn btn-dark">
+                <i class="bi bi-file-plus-fill"></i>   Create new Category
+                </a>
+            
+        </div>
+
+    </div>
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Name</th>
-            <th scope="col">DisplayOrder</th>
+            <th scope="col">Display Order</th>
         </tr>
     </thead>
     <tbody>
@@ -14,12 +29,17 @@
             <tr>
                 <td>@obj.Id</td>
                 <td>@obj.Name</td>
-                <td>@obj.DisplayOrder</td>
-                
-                
+                <td>@obj.DisplayOrder</td>           
+                <td>
+                        <a asp-controller="" asp-action="" class=""><i class="bi bi-pencil-square"></i></a>
+                </td>
+                <td>
+                        <a asp-controller="" asp-action="" class=""><i class="bi bi-trash3-fill"></i></a>
+                </td>
             </tr>
         }
         
         
     </tbody>
 </table>
+</div>

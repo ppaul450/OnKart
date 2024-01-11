@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - OnlineKart</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OnlineKart.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark p-1 ">
+        <nav class="navbar navbar-expand-lg bg-dark p-1 ">
             <div class="container-fluid">
                 <a class="nav-link text-dark " asp-area="" asp-controller="Home" asp-action="Index"><img style="height:40px;width:130Px" src="~/onkart-high-resolution-logo-transparent.png" /></a>
                 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark ps-5 " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white ps-5 " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark ps-3" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
+                            <a class="nav-link text-white ps-3" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
                         </li>
                        
                     </ul>

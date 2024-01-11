@@ -16,5 +16,23 @@ namespace OnlineKart.Controllers
 			List<Category> objCategoryList= _context.Categories.ToList();
 			return View(objCategoryList);
 		}
-	}
+
+		public IActionResult Create()
+		{
+			return View();
+		}
+		[HttpPost]
+        public IActionResult Create(Category obj)
+        {
+			if(ModelState.IsValid)
+			{
+                _context.Categories.Add(obj);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+
+            }
+			return View();
+			
+        }
+    }
 }
