@@ -10,8 +10,9 @@ namespace OnlineKart.Models
 		[Required]
 		[MaxLength(30)]
 		[DisplayName("Category Name")]
-		public string Name { get; set; }
+		public string? Name { get; set; }
 
+		[Required]
 		[Range(1,100,ErrorMessage ="The Range should be 1-100!")]
         [DisplayName("Display Order")]
         public int DisplayOrder { get; set; }
